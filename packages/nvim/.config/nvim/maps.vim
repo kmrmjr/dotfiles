@@ -72,7 +72,6 @@ nmap <C-l> :tabnext<Return>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>w<CR> :w<CR>
 nnoremap <Leader>q<CR> :q!<CR>
-" nnoremap <Leader>qqq :q!<CR>
 nnoremap <Leader>qqq :bufdo! q!<CR>
 nnoremap <Leader>www :bufdo! wq!<CR>
 nnoremap <Leader>wq :wq<CR>
