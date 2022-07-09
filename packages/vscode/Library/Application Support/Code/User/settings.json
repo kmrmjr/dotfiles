@@ -1,0 +1,99 @@
+{
+    "vim.vimrc.enable": true,
+    "vim.leader": "<space>",
+    "vim.vimrc.path": "~/.config/nvim/maps.vim",
+    "vim.useSystemClipboard": true,
+    "vim.easymotion": true,
+    "vim.surround": true,
+    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+    "terminal.integrated.inheritEnv": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.languageServer": "Default",
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "github.gitAuthentication": false,
+    "vim.hlsearch": true,
+    "markdown.extension.preview.autoShowPreviewToSide": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "mssql.connections": [
+        {
+            "server": "{{put-server-name-here}}",
+            "database": "{{put-database-name-here}}",
+            "user": "{{put-username-here}}",
+            "password": ""
+        }
+    ],
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "prettier.tabWidth": 4,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.singleQuote": true,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.profiles.osx": {
+        "/bin/bash (migrated)": {
+            "path": "/bin/bash",
+            "args": ["-l"]
+        }
+    },
+    "vetur.format.options.tabSize": 4,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.columnSelection": true,
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.closeExplorerAfterOpenFile",
+            "sequence": [
+                "list.select",
+                "workbench.action.toggleSidebarVisibility"
+                // "workbench.files.action.collapseExplorerFolders",
+            ]
+        },
+        {
+            "command": "multiCommand.closeExplorerAfterOpenFileInSplitedEditor",
+            "sequence": [
+                "explorer.openToSide",
+                "workbench.action.toggleSidebarVisibility"
+                // "workbench.files.action.collapseExplorerFolders",
+            ]
+        },
+        {
+            "command": "multiCommand.viewExplorerClosingAllFolder",
+            "sequence": [
+                "workbench.view.explorer",
+                // "workbench.files.action.collapseExplorerFolders",
+                "list.focusFirst"
+            ]
+        }
+    ],
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.jsxSingleQuote": true,
+    "prettier.requireConfig": true,
+    "eslint.codeActionsOnSave.rules": null
+}

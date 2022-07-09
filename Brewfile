@@ -1,0 +1,23 @@
+brew "stow"
+brew "neovim"
+brew "tmux"
+brew "gh"
+brew "fzf"
+brew "starship"
+brew "gsed"
+brew "zsh-autosuggestions"
+brew "koekeishiya/formulae/yabai"
+brew "koekeishiya/formulae/skhd"
+brew "tig"
+brew "ripgrep"
+brew "pure"
+brew "redis"
+brew "ranger"
+brew "asdf"
+# dependences of yarn on asdf
+brew "gpg"
+brew "lnav"
+
+tap "homebrew/cask-fonts"
+
+cask "font-hack-nerd-font"
