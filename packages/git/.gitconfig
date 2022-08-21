@@ -1,0 +1,17 @@
+[include]
+    path = .gitconfig.local
+[alias]
+    st = status
+    cm = commit
+    co = checkout
+    fe = fetch
+    p = push
+    po = push origin
+    cb =  "!f() { echo `git symbolic-ref --short HEAD` | tr -d '\n' ``| pbcopy; pbpaste ; echo '';}; f"
+    mom = merge origin/master
+    als = !"git config --list | grep ^alias\\. | sort | sed s/^alias\\.// | sed -e 's/=/ /' | awk '{printf \"%-10s %s\",$1,c=\"\";for(i=2;i<=NF;i++) c=c $i\" \"; print c}'"
+
+[pager]
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less

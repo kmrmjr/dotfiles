@@ -1,0 +1,182 @@
+[
+
+    //------------------------------------------
+    // Select suggestion
+    //------------------------------------------
+    {
+        "key": "ctrl+p",
+        "command": "-selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenNavigateNext"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenNavigatePrevious"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    //------------------------------------------
+    // Split window
+    //------------------------------------------
+    {
+        "key": "s v",
+        "command": "workbench.action.splitEditorRight",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "s s",
+        "command": "workbench.action.splitEditorDown",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    //------------------------------------------
+    // Move window
+    //------------------------------------------
+    {
+        "key": "s h",
+        "command": "workbench.action.previousEditor",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "s l",
+        "command": "workbench.action.nextEditor",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    //------------------------------------------
+    // Move tab
+    //------------------------------------------
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.previousEditor",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.nextEditor",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    //------------------------------------------
+    // Explorer
+    //------------------------------------------
+    {
+        "key": "s i",
+        "command": "workbench.view.explorer",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "s f",
+        "command": "multiCommand.viewExplorerClosingAllFolder",
+        "when": "editorFocus && vim.mode == 'Normal' || editorFocus && !inputFocus"
+    },
+    {
+        "key": "q",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+    },
+    {
+        "key": "s l",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+    },
+    {
+        "key": "enter",
+        "command": "-renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "Enter",
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "command": "multiCommand.closeExplorerAfterOpenFile"
+        },
+        "when": "explorerViewletFocus && explorerViewletVisible"
+    },
+    {
+        "key": "ctrl+Enter",
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "command": "multiCommand.closeExplorerAfterOpenFileInSplitedEditor"
+        },
+        "when": "explorerViewletFocus && explorerViewletVisible"
+    },
+    {
+        "key": "shift+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "shift+k",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "d",
+        "command": "deleteFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "shift+o",
+        "command": "workbench.files.action.collapseExplorerFolders",
+        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+    },
+    //----------------------------
+    // Terminal
+    //----------------------------
+    {
+        "key": "ctrl+t z",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "!terminalFocus && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+t ctrl+k",
+        "command": "workbench.action.terminal.resizePaneUp",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+t ctrl+j",
+        "command": "workbench.action.terminal.resizePaneDown",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+t ctrl+k",
+        "command": "workbench.action.terminal.resizePaneUp",
+        "when": "!terminalFocus && terminalHasBeenCreated || !terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+t ctrl+j",
+        "command": "workbench.action.terminal.resizePaneDown",
+        "when": "!terminalFocus && terminalHasBeenCreated || !terminalFocus && terminalProcessSupported"
+    },
+    //----------------------------
+    // Search
+    //----------------------------
+    {
+        "key": "ctrl+t z",
+        "command": "workbench.action.togglePanel",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "workbench.view.search",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "cmd+pageup",
+        "command": "workbench.action.toggleKeybindingsLog"
+    }
+]

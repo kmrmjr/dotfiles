@@ -1,0 +1,3 @@
+set diff-highlight = true
+color diff-header default blue
+color diff-chunk black white

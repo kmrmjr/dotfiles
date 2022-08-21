@@ -1,0 +1,20 @@
+brew "stow"
+brew "neovim"
+brew "tmux"
+brew "git"
+brew "fzf"
+brew "gsed"
+brew "zsh-autosuggestions"
+brew "tig"
+brew "ripgrep"
+brew "pure"
+brew "redis"
+brew "ranger"
+brew "asdf"
+# dependences of yarn on asdf
+brew "gpg"
+brew "lnav"
+
+tap "homebrew/cask-fonts"
+
+cask "font-hack-nerd-font"
