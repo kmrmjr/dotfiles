@@ -190,6 +190,8 @@ let g:coc_global_extensions = [
     \'coc-docker',
     \'coc-html',
     \'coc-css',
+    \'coc-sql',
+    \'coc-prisma',
 \ ]
 
 autocmd FileType html let b:coc_pairs_disabled = ['<']
