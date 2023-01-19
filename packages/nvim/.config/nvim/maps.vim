@@ -10,6 +10,12 @@ nnoremap k gk
 vnoremap j gj
 vnoremap k gk
 
+" Move cursor by lines
+nnoremap gj j
+nnoremap gk k
+vnoremap gj j
+vnoremap gk k
+
 " move left and right in insert mode
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
