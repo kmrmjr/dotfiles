@@ -59,6 +59,11 @@ map sl <C-w>l
 " paste texts without overwriting the yanked text.
 vnoremap p "_dP
 
+" duplicate line
+nnoremap dl "dyy"dp
+vnoremap <Leader>d ma"dy`a"dp
+
+
 " Split window
 nmap ss :split<Return><C-w>j
 nmap sv :vsplit<Return><C-w>l
