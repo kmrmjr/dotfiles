@@ -15,5 +15,10 @@
     },
     {
         "coc.preferences.formatOnSaveFiletypes": ["go"]
+    },
+    {
+      "coc.preferences.formatOnSaveFiletypes": [
+        "prisma"
+      ]
     }
 ]
