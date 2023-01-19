@@ -42,6 +42,7 @@ nnoremap T D
 
 " Change texts without overwriting the yanked text.
 nnoremap c "_c
+nnoremap C "_C
 
 " Move window
 map sh <C-w>h
