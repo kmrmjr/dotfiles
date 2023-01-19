@@ -5,8 +5,6 @@ call plug#begin()
       \ 'for': ['javascript', 'typescript', 'javascriptreact','typescriptreact', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
     Plug 'ntk148v/vim-horizon'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'windwp/nvim-autopairs'
     Plug 'Shougo/defx.nvim'
     Plug 'tomasiser/vim-code-dark'
     Plug 'vim-airline/vim-airline'
@@ -19,10 +17,13 @@ call plug#begin()
     Plug 'kristijanhusak/defx-icons'
     Plug 'kristijanhusak/defx-git'
     Plug 'iberianpig/tig-explorer.vim'
+    Plug 'rbgrouleff/bclose.vim'
     Plug 'tpope/vim-surround'
     Plug 'phaazon/hop.nvim'
     Plug 'tpope/vim-commentary'
+    Plug 'iberianpig/tig-explorer.vim'
+    Plug 'pantharshit00/vim-prisma'
     Plug 'marko-cerovac/material.nvim'
     Plug 'sainnhe/edge'
-    Plug 'iberianpig/tig-explorer.vim'
+    " Plug 'windwp/nvim-autopairs'
 call plug#end()
