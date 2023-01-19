@@ -7,7 +7,7 @@ lua <<EOF
 require'nvim-treesitter.configs'.setup {
   highlight = {
     enable = true,
-    disable = {"html"},
+    disable = {"html", "vim", "lua"},
   },
   indent = {
     enable = true,
@@ -17,7 +17,6 @@ require'nvim-treesitter.configs'.setup {
     "tsx",
     "javascript",
     "toml",
-    "json",
     "yaml",
     "html",
     "scss",
