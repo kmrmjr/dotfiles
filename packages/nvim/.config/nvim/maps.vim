@@ -79,9 +79,7 @@ nmap <silent> <Esc><Esc> :nohlsearch<CR>
 
 " Open current directory
 nmap te :tab split<CR>
-nmap <S-Tab> :tabprev<Return>
 nmap <C-h> :tabprev<Return>
-nmap <Tab> :tabnext<Return>
 nmap <C-l> :tabnext<Return>
 
 " Save and close file
