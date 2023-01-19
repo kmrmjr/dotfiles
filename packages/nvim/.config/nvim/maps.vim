@@ -25,7 +25,7 @@ nnoremap H ^
 vnoremap H ^
 " Move to end of line with L
 nnoremap L $
-vnoremap L $
+vnoremap L $h
 
 
 " Operator settings
