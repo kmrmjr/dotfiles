@@ -18,3 +18,4 @@ set hls
 runtime ./plug.vim
 runtime ./maps.vim
 runtime ./theme.vim
+runtime ./utils.vim
