@@ -92,6 +92,6 @@ nnoremap <Leader>wq :wq<CR>
 
 " Operate all
 nmap <C-a> gg<S-v>G
-nmap ta :%d<CR>
-nmap ya :%y<CR>
-nmap da <C-a>d
+nmap ta<CR> :%d<CR>
+nmap ya<CR> :%y<CR>
+nmap da<CR> <C-a>d
