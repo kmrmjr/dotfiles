@@ -1,12 +1,13 @@
 set shell=/bin/zsh
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set expandtab
 set textwidth=0
 set autoindent
 set clipboard=unnamed
 set number
-
+set conceallevel=0
+let g:vim_json_syntax_conceal=0
 " Serch config
 " Case insensitive by default
 set ignorecase
