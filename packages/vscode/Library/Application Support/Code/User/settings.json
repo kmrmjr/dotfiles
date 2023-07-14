@@ -14,11 +14,11 @@
     "github.gitAuthentication": false,
     "vim.hlsearch": true,
     "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["leader", "s"],
-            "after": ["leader", "leader", "k"]
-            // "after": ["leader", "leader", "2", "s"]
-        },
+        // {
+        //     "before": ["leader", "s"],
+        //     "after": ["leader", "leader", "k"]
+        //     // "after": ["leader", "leader", "2", "s"]
+        // },
         {
             "before": ["leader", "k"],
             "after": ["leader", "leader", "k"]
@@ -26,7 +26,37 @@
         {
             "before": ["leader", "j"],
             "after": ["leader", "leader", "j"]
-        }
+        },
+        {
+            "before": ["g", "i"],
+            "commands": [
+                "editor.action.editor.action.peekImplementationn"
+            ]
+        },
+        {
+            "before": ["g", "y"],
+            "commands": [
+                "editor.action.goToTypeDefinition"
+            ]
+        },
+        {
+            "before": ["g", "r"],
+            "commands": [
+                "editor.action.goToReferences"
+            ]
+        },
+        {
+            "before": ["<C-j>"],
+            "commands": [
+                "editor.action.marker.nextInFiles"
+            ]
+        },
+        {
+            "before": ["leader", "r", "n"],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
     ],
     "markdown.extension.preview.autoShowPreviewToSide": true,
     "[typescript]": {
@@ -36,7 +66,7 @@
     "editor.insertSpaces": false,
     "editor.lineNumbers": "on",
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-    "editor.wordWrap": "off",
+    "editor.wordWrap": "on",
     "notebook.cellToolbarLocation": {
         "default": "right"
     },
@@ -96,5 +126,14 @@
     },
     "prettier.jsxSingleQuote": true,
     "prettier.requireConfig": true,
-    "eslint.codeActionsOnSave.rules": null
+    "eslint.codeActionsOnSave.rules": null,
+    "window.zoomLevel": 1,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.fontFamily": "'Ubuntu Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "python.linting.mypyEnabled": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "markdown.marp.enableHtml": true
 }

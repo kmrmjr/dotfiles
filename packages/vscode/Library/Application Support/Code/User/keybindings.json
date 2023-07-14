@@ -26,6 +26,55 @@
         "command": "selectPrevSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
+    //----------------------------
+    // Show hover
+    //----------------------------
+    {
+        "key": "shift+k",
+        "command": "editor.action.showHover",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    //----------------------------
+    // Move to warning
+    //----------------------------
+    {
+        "key": "ctrl+j",
+        "command": "editor.action.marker.nextInFiles",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "editor.action.marker.prevInFiles",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    //------------------------------------------
+    // Code Navigation
+    //------------------------------------------
+    // {
+    //     "key": "g r",
+    //     "command": "editor.action.goToReferences",
+    //     "when": "editorFocus && vim.mode == 'Normal'"
+    // },
+    // {
+    //     "key": "g d",
+    //     "command": "editor.action.revealDefinition",
+    //     "when": "editorFocus && vim.mode == 'Normal'"
+    // },
+    // {
+    //     "key": "g i",
+    //     "command": "editor.action.goToImplementation",
+    //     "when": "editorFocus && vim.mode == 'Normal'"
+    // },
+    // {
+    //     "key": "g y",
+    //     "command": "editor.action.goToTypeDefinition",
+    //     "when": "editorFocus && vim.mode == 'Normal'"
+    // },
+    // {
+    //     "key": "shift+k",
+    //     "command": "editor.action.showHover",
+    //     "when": "editorFocus && vim.mode == 'Normal'"
+    // },
     //------------------------------------------
     // Split window
     //------------------------------------------
