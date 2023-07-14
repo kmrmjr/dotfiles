@@ -108,3 +108,6 @@ alias copy-branch="git symbolic-ref --short HEAD | tr -d '\n' | pbcopy"
 
 # use diff-highlight with tig in tmux
 alias tig='TERM=xterm-256color tig'
+
+# enable go modules
+export GO111MODULE=on
