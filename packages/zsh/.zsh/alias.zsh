@@ -19,6 +19,10 @@ alias pip="pip3"
 alias rzsh="source ~/.zshrc"
 alias cpwd="pwd | pbcopy"
 
+alias awk="gawk"
+
+alias tmuxclear="clear && tmux clear-history"
+alias clear="[[ -n "$TMUX" ]] && tmuxclear || clear "
 
 #-------------------------------------------
 # Replace vim with nvim
