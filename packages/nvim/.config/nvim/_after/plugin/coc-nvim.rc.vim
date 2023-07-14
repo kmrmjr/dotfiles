@@ -192,6 +192,13 @@ let g:coc_global_extensions = [
     \'coc-css',
     \'coc-sql',
     \'coc-prisma',
+    \'coc-pydocstring',
 \ ]
 
 autocmd FileType html let b:coc_pairs_disabled = ['<']
+
+
+
+nmap <silent> ga <Plug>(coc-codeaction-line) 
+xmap <silent> ga <Plug>(coc-codeaction-selected)
+nmap <silent> gA <Plug>(coc-codeaction)

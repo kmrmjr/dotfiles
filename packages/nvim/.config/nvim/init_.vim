@@ -7,6 +7,7 @@ set autoindent
 set clipboard=unnamed
 set number
 set conceallevel=0
+set mouse=
 let g:vim_json_syntax_conceal=0
 " Serch config
 " Case insensitive by default

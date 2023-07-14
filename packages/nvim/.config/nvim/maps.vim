@@ -4,6 +4,10 @@ let mapleader = "\<Space>"
 " Exit insert mode with jj
 inoremap <silent> jj <ESC>
 
+" Swap ; for : in normal mode
+nnoremap ; :
+vnoremap : ;
+
 " Move cursor by display lines
 nnoremap j gj
 nnoremap k gk
@@ -48,6 +52,7 @@ nnoremap T D
 
 " Change texts without overwriting the yanked text.
 nnoremap c "_c
+vnoremap c "_c
 nnoremap C "_C
 
 " Move window
@@ -89,6 +94,9 @@ nnoremap <Leader>q<CR> :q!<CR>
 nnoremap <Leader>qqq :bufdo! q!<CR>
 nnoremap <Leader>www :bufdo! wq!<CR>
 nnoremap <Leader>wq :wq<CR>
+
+" Operate block
+nnoremap tb %v%t<C-o>
 
 " Operate all
 nmap <C-a> gg<S-v>G

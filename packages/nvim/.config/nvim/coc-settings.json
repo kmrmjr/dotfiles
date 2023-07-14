@@ -1,6 +1,23 @@
 [
     {
-        "python.autoComplete.extraPaths": []
+        "typescript.preferences.importModuleSpecifier": "non-relative",
+    },
+    {
+      "pydocstring": {
+        "enable": true,
+        "formatter": "google"
+    },
+    },
+    {
+      "python": {
+
+        "pythonPath": [
+         "./.venv/bin/python3",
+          "/usr/local/bin/python3",
+        ],
+        "autoComplete.extraPaths": [],
+        "venvPath": "./venv/bin/python3",
+  }
     },
     {
         "suggest.noselect": false,

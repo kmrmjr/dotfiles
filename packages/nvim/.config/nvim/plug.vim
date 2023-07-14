@@ -25,5 +25,4 @@ call plug#begin()
     Plug 'pantharshit00/vim-prisma'
     Plug 'marko-cerovac/material.nvim'
     Plug 'sainnhe/edge'
-    " Plug 'windwp/nvim-autopairs'
 call plug#end()

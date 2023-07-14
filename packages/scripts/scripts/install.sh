@@ -52,12 +52,20 @@ if [ ! -d ~/.vim/autoload ]; then
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
 
+# Install packer.nvim
+if [ ! -d ~/.local/share/nvim/site/pack/packer/opt ]; then
+  git clone https://github.com/wbthomason/packer.nvim \
+    ~/.local/share/nvim/site/pack/packer/opt/packer.nvim
+done
+
 # asdf Install Script
 for plugin in $(awk '{print $1}' ~/.tool-versions); do
     if ! [ -d ~/.asdf/plugins/"$plugin" ]; then
         asdf plugin add "$plugin"
     fi
 done
+
+
 
 is_runtime_versions_changed () {
     plugin="$1"
